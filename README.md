@@ -14,10 +14,30 @@ A floating Python desktop app that sits alongside Wireshark and converts plain E
 ## Requirements
 
 - Python 3.11+
-- [Ollama](https://ollama.com) running on `localhost:11434`
-- `mistral` model pulled: `ollama pull mistral`
+- Ollama (see setup guide below)
 
-## Installation
+## 1. Install Ollama
+
+Ollama runs AI models locally on your machine. SharkAssist requires it to be running before you launch the app.
+
+**Windows / macOS:**
+1. Go to [https://ollama.com/download](https://ollama.com/download)
+2. Download and run the installer for your OS
+3. Once installed, Ollama runs automatically in the background
+
+**Linux:**
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+**Pull the mistral model** (required — do this once after installing Ollama):
+```bash
+ollama pull mistral
+```
+
+> This downloads the mistral model (~4 GB). Make sure Ollama is running before launching SharkAssist. You can verify it's running by opening [http://localhost:11434](http://localhost:11434) in your browser — you should see `Ollama is running`.
+
+## 2. Install SharkAssist
 
 ```bash
 git clone https://github.com/ethicalkaps/sharkassist.git
