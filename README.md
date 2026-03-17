@@ -79,3 +79,7 @@ sharkassist/
 ## License
 
 MIT
+
+---
+
+Made by **Kapil Chaudhary** aka [ethicalkaps](https://github.com/ethicalkaps)
