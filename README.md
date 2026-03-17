@@ -2,6 +2,10 @@
 
 A floating Python desktop app that sits alongside Wireshark and converts plain English into Wireshark display filters using a local [Ollama](https://ollama.com) model.
 
+## Demo
+
+![SharkAssist in action](assets/demo.png)
+
 ## Features
 
 - **Plain English → Wireshark filter** powered by `mistral` running locally
